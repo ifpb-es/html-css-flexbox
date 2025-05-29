@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <script type="module">
+        import { addEventListener } from '../../script.js';
+        addEventListener('#container', 'flex-direction');
+    </script>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <fieldset>
+        <legend>flex-direction</legend>
+        <form>
+            <div>
+                <input id="row" type="radio" name="flex-direction" value="row" checked>
+                <label for="row">row (default)</label>
+            </div>
+            <div>
+                <input id="row-reverse" type="radio" name="flex-direction" value="row-reverse">
+                <label for="row-reverse">row-reverse</label>
+            </div>
+            <div>
+                <input id="column" type="radio" name="flex-direction" value="column">
+                <label for="column">column</label>
+            </div>
+            <div>
+                <input id="column-reverse" type="radio" name="flex-direction" value="column-reverse">
+                <label for="column-reverse">column-reverse</label>
+            </div>
+        </form>
+    </fieldset>
+    <div id="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>

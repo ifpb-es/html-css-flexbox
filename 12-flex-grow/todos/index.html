@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <link rel="stylesheet" href="../estilo.css">
+    <script type="module">
+        import { addEventListener } from '../../script.js';
+        addEventListener('#box2', 'flex-grow');
+    </script>
+    <style>
+        #container > * {
+            flex-grow: 1;
+        }
+
+        #box1, #box2, #box3 {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <fieldset>
+        <legend>flex-grow #box2</legend>
+        <form>
+            <div>
+                <input id="_0" type="radio" name="flex-grow" value="0" checked>
+                <label for="_0">0 (default)</label>
+            </div>
+            <div>
+                <input id="_1" type="radio" name="flex-grow" value="1">
+                <label for="_1">1</label>
+            </div>
+            <div>
+                <input id="_2" type="radio" name="flex-grow" value="2">
+                <label for="_2">2</label>
+            </div>
+            <div>
+                <input id="_3" type="radio" name="flex-grow" value="3">
+                <label for="_3">3</label>
+            </div>
+        </form>
+    </fieldset>
+    <div id="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+</body>
+</html>

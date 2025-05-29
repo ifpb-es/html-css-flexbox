@@ -1,0 +1,28 @@
+body {
+    font-family: arial;
+}
+
+#container {
+    display: flex;
+
+    width: 300px;
+    height: 300px;
+    background-color: #995db5;
+    margin: auto;
+    margin-top: 10px;
+    border: 3px tomato solid;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #f7941f;
+    border: 2px #1e1e1e solid;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

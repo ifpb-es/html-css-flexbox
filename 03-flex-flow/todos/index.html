@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-flow</title>
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <script type="module">
+        import { addEventListener } from '../../script.js';
+        addEventListener('#container', 'flex-flow');
+    </script>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <fieldset>
+        <legend>flex-flow</legend>
+        <form>
+            <div>
+                <input id="row-nowrap" type="radio" name="flex-flow" value="row nowrap" checked>
+                <label for="row-nowrap">row nowrap</label>
+            </div>
+            <div>
+                <input id="row-wrap" type="radio" name="flex-flow" value="row wrap">
+                <label for="row-wrap">row wrap</label>
+            </div>
+            <div>
+                <input id="row-wrap-reverse" type="radio" name="flex-flow" value="row wrap-reverse">
+                <label for="row-wrap-reverse">row wrap-reverse</label>
+            </div>
+            <div>
+                <input id="row-reverse-nowrap" type="radio" name="flex-flow" value="row-reverse nowrap">
+                <label for="row-reverse-nowrap">row-reverse nowrap</label>
+            </div>
+            <div>
+                <input id="row-reverse-wrap" type="radio" name="flex-flow" value="row-reverse wrap">
+                <label for="row-reverse-wrap">row-reverse wrap</label>
+            </div>
+            <div>
+                <input id="column-nowrap" type="radio" name="flex-flow" value="column nowrap">
+                <label for="column-nowrap">column nowrap</label>
+            </div>
+            <div>
+                <input id="column-wrap" type="radio" name="flex-flow" value="column wrap">
+                <label for="column-wrap">column wrap</label>
+            </div>
+            <div>
+                <input id="column-wrap-reverse" type="radio" name="flex-flow" value="column wrap-reverse">
+                <label for="column-wrap-reverse">column wrap-reverse</label>
+            </div>
+            <div>
+                <input id="column-reverse-nowrap" type="radio" name="flex-flow" value="column-reverse nowrap">
+                <label for="column-reverse-nowrap">column-reverse nowrap</label>
+            </div>
+            <div>
+                <input id="column-reverse-wrap" type="radio" name="flex-flow" value="column-reverse wrap">
+                <label for="column-reverse-wrap">column-reverse wrap</label>
+            </div>
+        </form>
+    </fieldset>
+    <div id="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>

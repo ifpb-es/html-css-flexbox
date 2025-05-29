@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis: auto; /* default */</title>
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <link rel="stylesheet" href="../estilo.css">
+    <script type="module">
+        import { addEventListener } from '../../script.js';
+        addEventListener('#container', 'flex-direction');
+    </script>
+    <style>
+        #container {
+            flex-direction: row;
+            width: 100%;
+            height: unset;
+        }
+
+        #box1 {
+            flex: 0 1 100px;
+        }
+
+        #box2 {
+            flex: 1 0 150px;
+        }
+
+        #box3 {
+            flex: 1 1 200px;
+        }        
+    </style>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <h1>#container { width: 100%; height: unset; }</h1>
+    <h1>#box1 { flex: 0 1 100px; }</h1>
+    <h1>#box2 { flex: 1 0 150px; }</h1>
+    <h1>#box3 { flex: 1 1 200px; }</h1>
+    <fieldset>
+        <legend>flex-direction #container</legend>
+        <form>
+            <div>
+                <input id="row" type="radio" name="flex-basis" value="row" checked>
+                <label for="row">row</label>
+            </div>
+            <div>
+                <input id="column" type="radio" name="flex-basis" value="column">
+                <label for="column">column</label>
+            </div>
+        </form>
+    </fieldset>
+    <div id="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+</body>
+</html>

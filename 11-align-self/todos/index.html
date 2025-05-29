@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self: flex-start;</title>
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <link rel="stylesheet" href="../estilo.css">
+    <script type="module">
+        import { addEventListener } from '../../script.js';
+        addEventListener('#box3', 'align-self');
+    </script>
+    <style>
+        #box5 {
+            align-self: baseline;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <fieldset>
+        <legend>align-self #box3</legend>
+        <form>
+            <div>
+                <input id="flex-start" type="radio" name="align-self" value="flex-start" checked>
+                <label for="flex-start">flex-start</label>
+            </div>
+            <div>
+                <input id="center" type="radio" name="align-self" value="center">
+                <label for="center">center</label>
+            </div>
+            <div>
+                <input id="flex-end" type="radio" name="align-self" value="flex-end">
+                <label for="flex-end">flex-end</label>
+            </div>
+            <div>
+                <input id="stretch" type="radio" name="align-self" value="stretch">
+                <label for="stretch">stretch</label>
+            </div>
+            <div>
+                <input id="baseline" type="radio" name="align-self" value="baseline">
+                <label for="baseline">baseline</label>
+            </div>
+        </form>
+    </fieldset>
+    <div id="container">
+        <div class="box"><div>1</div></div>
+        <div class="box"><div>2</div><div>2</div></div>
+        <div class="box" id="box3"><div>3</div><div>3</div><div>3</div></div>
+        <div class="box"><div>4</div><div>4</div><div>4</div><div>4</div></div>
+        <div class="box" id="box5"><div>5</div><div>5</div><div>5</div><div>5</div><div>5</div></div>
+        <div class="box"><div>6</div><div>6</div><div>6</div><div>6</div><div>6</div><div>6</div></div>
+        <div class="box"><div>7</div><div>7</div><div>7</div><div>7</div><div>7</div><div>7</div><div>7</div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <script type="module">
+        import { addEventListener } from '../../script.js';
+        addEventListener('#container', 'justify-content');
+    </script>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <fieldset>
+        <legend>justify-content</legend>
+        <form>
+            <div>
+                <input id="flex-start" type="radio" name="justify-content" value="flex-start" checked>
+                <label for="flex-start">flex-start (default)</label>
+            </div>
+            <div>
+                <input id="flex-end" type="radio" name="justify-content" value="flex-end">
+                <label for="flex-end">flex-end</label>
+            </div>
+            <div>
+                <input id="center" type="radio" name="justify-content" value="center">
+                <label for="center">center</label>
+            </div>
+            <div>
+                <input id="space-between" type="radio" name="justify-content" value="space-between">
+                <label for="space-between">space-between</label>
+            </div>
+            <div>
+                <input id="space-around" type="radio" name="justify-content" value="space-around">
+                <label for="space-around">space-around</label>
+            </div>
+            <div>
+                <input id="space-evenly" type="radio" name="justify-content" value="space-evenly">
+                <label for="space-evenly">space-evenly</label>
+            </div>
+        </form>
+    </fieldset>
+    <div id="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>

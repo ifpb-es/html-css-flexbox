@@ -1,0 +1,16 @@
+#container {
+    /* 12px referente as bordas das 3 caixas usadas no exemplo */
+    width: 612px;
+}
+
+#box1 {
+    width: 50px;
+}
+
+#box2 {
+    width: 100px;
+}
+
+#box3 {
+    width: 150px;
+}

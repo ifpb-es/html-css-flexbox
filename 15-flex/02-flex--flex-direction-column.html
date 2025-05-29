@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis: auto; /* default */</title>
+    <link rel="stylesheet" href="../estilo-geral.css">
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        #container {
+            flex-direction: column;
+            width: unset;
+            height: 100%;
+        }
+
+        #box1 {
+            flex: 0 1 50px;
+        }
+
+        #box2 {
+            flex: 1 0 100px;
+        }
+
+        #box3 {
+            flex: 1 1 150px;
+        }        
+    </style>
+</head>
+<body>
+    <a href="index.html">Voltar</a>
+    <h1>flex-direction: column; </h1>
+    <h1>#container { width: unset; height: 100%; }</h1>
+    <h1>#box1 { flex: 0 1 100px; }</h1>
+    <h1>#box2 { flex: 1 0 150px; }</h1>
+    <h1>#box3 { flex: 1 1 200px; }</h1>
+    <div id="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+</body>
+</html>

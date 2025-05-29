@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <script type="module">
+        import { addEventListener } from '../../script.js';
+        addEventListener('#box1', 'order');
+    </script>
+    <style>
+        #box1 {
+            order: 0;
+        }
+        #box2 {
+            order: 1;
+        }
+        #box3 {
+            order: 2;
+        }
+        #box4 {
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <fieldset>
+        <legend>order #box1</legend>
+        <form>
+            <div>
+                <input id="_1" type="radio" name="order" value="1" checked>
+                <label for="_1">1</label>
+            </div>
+            <div>
+                <input id="_2" type="radio" name="order" value="2">
+                <label for="_2">2</label>
+            </div>
+            <div>
+                <input id="_3" type="radio" name="order" value="3">
+                <label for="_3">3</label>
+            </div>
+            <div>
+                <input id="_4" type="radio" name="order" value="4">
+                <label for="_4">4</label>
+            </div>
+        </form>
+    </fieldset>
+    <div id="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
